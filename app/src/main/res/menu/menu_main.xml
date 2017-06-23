@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.edu.uac.tallersegundocorte.MainActivity">
+    <item
+        android:id="@+id/ver_platos"
+        android:title="@string/ver_todos_los_platos"  />
+
+    <item android:id="@+id/reportes"
+        android:title="@string/reportes" >
+        <menu tools:context="com.edu.uac.tallersegundocorte.MainActivity">
+            <item
+                android:id="@+id/promociones"
+                android:title="@string/promociones"  />
+            <item
+                android:id="@+id/ver_plato_por_comida"
+                android:title="@string/platosporcomida"  />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NuevoPlatoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:text="Plato"
+            style="@style/CategoryStyle" />
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edit_codigoplato"
+                android:hint="Codigo"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+
+            <EditText
+                android:id="@+id/edit_nombreplato"
+                style="@style/EditorFieldStyle"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/edit_descripcion"
+                style="@style/EditorFieldStyle"
+                android:hint="Descripcion"
+                android:inputType="text"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_tipoplato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:text="Tipo de Plato"
+            style="@style/CategoryStyle" />
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radio_group_tplato">
+
+                <RadioButton
+                    android:text="Plato Fuerte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rad_btn_pf"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="Bebida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobn_bebida"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_tipocomida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:text="Tipo de Comida"
+            style="@style/CategoryStyle" />
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radio_group_tcomida">
+
+                <RadioButton
+                    android:text="Colombiana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rad_btn_col"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="Mexicana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rad_btn_mex"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="Italiana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rad_btn_ita"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:text="Arabe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rad_btn_Arab"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/container_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:text="Valor del Plato"
+            style="@style/CategoryStyle" />
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+
+            <EditText
+                android:id="@+id/edit_valorplato"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_agregarplato"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+            android:text="Agregar" />
+
+    </LinearLayout>
+
+</LinearLayout>

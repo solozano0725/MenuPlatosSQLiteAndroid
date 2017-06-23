@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_tipoplato_options">
+        <item>Carnes</item>
+        <item>Pollo</item>
+        <item>Sopa</item>
+        <item>Ensalada</item>
+        <item>Arroz</item>
+        <item>Bebida</item>
+        <item>Pescado</item>
+    </string-array>
+
+    <string-array name="array_tipocomida_options">
+        <item>Colombiana</item>
+        <item>Mexicana</item>
+        <item>Italiana</item>
+        <item>Árabe</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_tipocomida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="Tipo de Comida" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/radio_group_tcomida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rad_btn_col"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Colombiana"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rad_btn_mex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mexicana"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rad_btn_ita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Italiana"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rad_btn_Arab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Arabe"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnbuscarcomida"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="14dp"
+        android:text="buscar" />
+
+    <ListView
+        android:id="@+id/listViewComida"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

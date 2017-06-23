@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Las 3 Esquinas</string>
+    <string name="action_settings">Settings</string>
+    <string name="acerca_de">Acerca De</string>
+    <string name="consultar_plato_men">Consultar Plato Menú</string>
+    <string name="eliminar_plato_men">Eliminar Plato Menú</string>
+    <string name="men_principal">Menú Principal</string>
+    <string name="modificar_plato_men">Modificar Plato Menú</string>
+    <string name="nuevo_plato_men">Nuevo Plato Menú</string>
+    <string name="buscar_plato">Buscar Plato</string>
+    <string name="reportes">Reportes</string>
+    <string name="ver_todos_los_platos">Ver Todos los Platos</string>
+    <string name="promociones">Promociones</string>
+    <string name="platosporcomida">Ver Platos por Comida</string>
+
+    <string name="plato_carnes">Carnes</string>
+    <string name="plato_pollo">Pollo</string>
+    <string name="plato_sopa">Sopa</string>
+    <string name="plato_ensalada">Ensalada</string>
+    <string name="plato_arroz">Arroz</string>
+    <string name="plato_bebida">Bebida</string>
+    <string name="plato_pescado">Pescado</string>
+
+    <string name="comida_colombiana">Colombiana</string>
+    <string name="comida_mexicana">Mexicana</string>
+    <string name="comida_italiana">Italiana</string>
+    <string name="comida_arabe">Árabe</string>
+
+</resources>

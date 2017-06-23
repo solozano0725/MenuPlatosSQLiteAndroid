@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.edu.uac.tallersegundocorte.ModificarPlatoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Digite el codigo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp">
+
+                    <EditText
+                        android:id="@+id/codigoplato"
+                        style="@style/EditorFieldStyle"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnbuscar"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="14dp"
+                android:text="buscar" />
+
+            <TextView
+                android:id="@+id/txtvwnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Codigo:"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtvwcodigo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Descripcion:"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtvwdescrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tipo de plato:"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtvwtipoplato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tipo de comida:"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtvwtipocomida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.96"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Precio:"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtvwprecio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.96"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Plato" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp">
+
+
+                    <EditText
+                        android:id="@+id/edit_nomplato"
+                        style="@style/EditorFieldStyle"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre"
+                        android:inputType="text"
+                        android:textAllCaps="true" />
+
+
+                    <EditText
+                        android:id="@+id/edit_descrip"
+                        style="@style/EditorFieldStyle"
+                        android:hint="Descripcion"
+                        android:inputType="text"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/container_tipoplato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Tipo de Plato" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_tplato"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_pf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Plato Fuerte"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/radiobn_bebida"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bebida"
+                            android:textSize="18sp" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/container_tipocomida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Tipo de Comida" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_tcomida"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_col"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Colombiana"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_mex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mexicana"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_ita"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Italiana"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_Arab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Arabe"
+                            android:textSize="18sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/container_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Valor del Plato" />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="4dp">
+
+
+                    <EditText
+                        android:id="@+id/edit_preciomodificar"
+                        style="@style/EditorFieldStyle"
+                        android:inputType="number" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnmodificar"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="14dp"
+                android:text="modificar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

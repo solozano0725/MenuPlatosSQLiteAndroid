@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.edu.uac.tallersegundocorte.EliminarPlatoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Digite el Nombre"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_nombrepla"
+                style="@style/EditorFieldStyle"
+                android:inputType="text"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_buscarplato"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+            android:text="Buscar Plato" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Codigo: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtvwcodigo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:text="Descripcion: "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtvwdescrip"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:text="Tipo de Plato: "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewtplato"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtvwtipoplato"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:text="Tipo de Comida: "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView11"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtvwtipocomida"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:text="Precio: "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewprecio"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtvwprecio"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/boton_eliminar"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="14dp"
+            android:text="Eliminar Plato" />
+
+    </RelativeLayout>
+
+</LinearLayout>
